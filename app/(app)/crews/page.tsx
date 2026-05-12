@@ -10,7 +10,7 @@ import {
   Plus,
   Search,
   Filter,
-  MoreVertical,
+  MoreHorizontal,
   ShieldCheck,
   Zap,
   Star
