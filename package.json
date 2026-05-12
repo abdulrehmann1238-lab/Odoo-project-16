@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "next": "15.0.0",
-    "react": "19.0.0-rc-696b3ed8-20241022",
-    "react-dom": "19.0.0-rc-696b3ed8-20241022",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "framer-motion": "^11.11.10",
     "gsap": "^3.12.5",
     "lenis": "^1.1.13",
@@ -24,8 +24,8 @@
   "devDependencies": {
     "typescript": "^5.6.3",
     "@types/node": "^20.17.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "eslint": "^9.13.0",
