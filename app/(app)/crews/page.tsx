@@ -13,8 +13,7 @@ import {
   MoreVertical,
   ShieldCheck,
   Zap,
-  Star,
-  Tool
+  Star
 } from "lucide-react";
 
 const crews = [
