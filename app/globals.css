@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --viiu-stone: #FAFAFA;
+  --viiu-graphite: #1C1917;
+  --viiu-slate: #44403C;
+  --viiu-aluminum: #A8A29E;
+  --viiu-champagne: #D6D3D1;
+}
+
+@layer base {
+  body {
+    @apply bg-viiu-stone text-viiu-graphite selection:bg-viiu-graphite selection:text-white antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  /* Strict 8px Baseline Grid visualization if needed */
+  .debug-grid {
+    background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 100% 8px;
+  }
+}
+
+@layer components {
+  .luxury-card {
+    @apply bg-white border border-viiu-slate/5 rounded-sm shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_100px_-20px_rgba(0,0,0,0.08)] transition-all duration-700;
+  }
+
+  .luxury-button {
+    @apply h-14 px-10 bg-viiu-graphite text-viiu-stone text-[10px] tracking-[0.4em] uppercase font-bold relative overflow-hidden flex items-center justify-center gap-3 rounded-sm transition-all;
+  }
+
+  .serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    @apply italic tracking-tight;
+  }
+}
+
+/* Lenis CSS */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-viiu-aluminum/20 rounded-full hover:bg-viiu-aluminum/40 transition-colors;
+}
+
+/* Typography Refinement */
+h1, h2, h3, h4 {
+  @apply tracking-tight;
+}
+
+.tracking-extreme {
+  letter-spacing: 0.8em;
+}
