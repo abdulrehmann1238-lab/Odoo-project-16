@@ -16,7 +16,8 @@ import {
   Filter,
   Layers,
   ChevronRight,
-  MoreHorizontal
+  MoreHorizontal,
+  Database
 } from "lucide-react";
 
 const recentFiles = [
